@@ -125,14 +125,14 @@ a {
 }
 
 /* slider */
-.swiper-container {
+.hero .swiper-container {
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
 /* Additional style for the slides */
-.swiper-slide {
+.hero .swiper-container .swiper-slide {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -351,6 +351,12 @@ a {
   position: relative;
 }
 
+.testimonials {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
 .custom-shape-divider-bottom-1698467442 {
   position: absolute;
   bottom: 0;
@@ -372,30 +378,59 @@ a {
   fill: #666af6;
 }
 
-.testimonials {
+.testinomial {
   background-color: var(--primary-color);
-  color: white;
+  padding-bottom: 3rem;
 }
 
-.testimonials-slider {
-  width: 100vw;
-  text-align: center;
+.testinomial .swiper-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-.testimonials-slider img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+.testinomial img {
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
+  object-fit: cover;
+  padding: 0.2rem;
+  border: 4px solid;
 }
 
-.testimonials-heading {
+.testinomial .swiper-container .swiper-slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
   text-align: center;
-  padding-bottom: 2.5rem;
+}
+
+.testinomial .message {
+  width: 50vw;
+  padding: 1rem 0;
+}
+
+.testinomial h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
   padding-top: 1rem;
 }
 
-.testimonials h2 {
+.testinomial-heading {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.testinomial-heading h2 {
   display: inline-block;
+  color: var(--white-color);
+  padding-top: 1rem;
+  margin-bottom: 3rem;
   font-size: 1.8rem;
 }
