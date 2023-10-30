@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #666af6;
+  --secondary-color: #072565;
   --white-color: #ffffff;
   --dark-color: #222;
   --dark-blue: rgb(6, 0, 43);
@@ -22,6 +23,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  color: var(--dark-color);
 }
 
 ul {
@@ -32,8 +34,13 @@ a {
   text-decoration: none;
 }
 
-.container {
+.header-container {
   width: 92%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -84,7 +91,7 @@ a {
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.11);
   position: relative;
   background-color: var(--white-color);
-  z-index: 2; /* ensure the header is on top of the shadow */
+  z-index: 2;
 }
 
 .header-flex {
@@ -124,14 +131,12 @@ a {
   padding: 0.5rem 1.4rem;
 }
 
-/* slider */
 .hero .swiper-container {
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
-/* Additional style for the slides */
 .hero .swiper-container .swiper-slide {
   width: 100%;
   height: 100%;
@@ -345,10 +350,57 @@ a {
   height: 8px;
 }
 
-.dummy {
+.join-us {
   background-color: var(--white-color);
-  height: 20vh;
   position: relative;
+  padding-bottom: 8rem;
+  padding-top: 5rem;
+}
+
+.join-us .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.join-us .join-us-content {
+  width: 40vw;
+}
+
+.join-us .join-us-content h2 {
+  padding: 0.5rem 0;
+}
+
+.join-us .join-us-content p {
+  padding-bottom: 0.5rem;
+}
+
+.join-us svg {
+  height: 28vw;
+  width: 40vw;
+}
+
+.join-btn {
+  margin-top: 1rem;
+}
+
+.join-us p {
+  color: var(--gray-color);
+}
+
+.join-us a {
+  /* color: var(--white-color);
+  background-color: var(--primary-color); */
+  font-weight: 500;
+  padding: 0.8rem 1.8rem;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.join-us a:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .testimonials {
@@ -433,4 +485,56 @@ a {
   padding-top: 1rem;
   margin-bottom: 3rem;
   font-size: 1.8rem;
+}
+
+.footer .container {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: rgb(240, 250, 255);
+}
+
+.footer a {
+  color: var(--gray-color);
+  margin-right: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+}
+
+.footer h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.footer-social-icons {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.footer h3 {
+  padding-bottom: 0.5rem;
+}
+
+.find-us li {
+  display: flex;
+  align-items: center;
+  color: var(--gray-color);
+}
+
+.find-us li p {
+  padding-left: 0.8rem;
+}
+
+.topbar p {
+  font-size: 0.85rem;
+  text-align: center;
+  font-family: "Poppins";
 }
