@@ -25,3 +25,11 @@ function resetTextAnimation() {
     textSlide2.parentNode.replaceChild(newElement, textSlide2);
   });
 }
+
+const menuToggle = document.getElementById("mobile-menu");
+const nav = document.getElementById("nav");
+
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active");
+  nav.classList.toggle("active");
+});
